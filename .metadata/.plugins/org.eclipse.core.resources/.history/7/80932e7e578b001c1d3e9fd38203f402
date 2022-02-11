@@ -21,10 +21,8 @@ public class CalculoIdade {
 		int anodif = Period.between(anniversario, hoje).getYears();
 		int mesdif = Period.between(anniversario, hoje).getMonths();
 		int diadif = Period.between(anniversario, hoje).getDays();
-		int anodif2 = anodif*365;
-		int mesdif2 = mesdif*12;
-		int diasdaidade= anodif2 + mesdif2;
-		System.out.println("Vc tem " + diasdaidade + "dias da idade");
+		var idade = anodif/365 + mesdif/12 + diadif/30;
+		System.out.println(idade);
 				
 	}
 }
