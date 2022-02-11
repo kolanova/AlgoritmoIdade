@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class CalculoIdade {
 
 	public static void main(String[] args) {
-		Scanner s = new Scanner(System.in);
-		System.out.println("Diga a ano do seu nascimento");
-				
+		System.out.println("Diga a data do seu nascimento");
+		Scanner input = new Scanner(System.in);
+		
 		LocalDate hoje = LocalDate.now();
 		LocalDate anniversario = LocalDate.of(1995, 12, 21);
 		double idade = Period.between(anniversario, hoje).getDays();
