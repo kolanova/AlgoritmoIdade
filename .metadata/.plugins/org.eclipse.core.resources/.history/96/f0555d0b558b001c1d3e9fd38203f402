@@ -17,7 +17,7 @@ public class CalculoIdade {
 		
 		
 		LocalDate hoje = LocalDate.now();
-		LocalDate anniversario = LocalDate.of(ano, mes, dia);
+		LocalDate anniversario = LocalDate.of(1995, 12, 21);
 		double idade = Period.between(anniversario, hoje).getDays();
 		System.out.println(idade);
 				

@@ -6,18 +6,11 @@ public class CalculoIdade {
 
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
-		System.out.println("Digite a ano do seu nascimento");
-		int ano = s.nextInt();
-		
-		System.out.println("Digite o mês do seu nascimento");
-		int mes = s.nextInt();
+		System.out.println("Diga a ano do seu nascimento");
+		double ano = s.nextDouble();
 				
-		System.out.println("Digite o dia do seu nascimento");
-		int dia = s.nextInt();
-		
-		
 		LocalDate hoje = LocalDate.now();
-		LocalDate anniversario = LocalDate.of(ano, mes, dia);
+		LocalDate anniversario = LocalDate.of(1995, 12, 21);
 		double idade = Period.between(anniversario, hoje).getDays();
 		System.out.println(idade);
 				
