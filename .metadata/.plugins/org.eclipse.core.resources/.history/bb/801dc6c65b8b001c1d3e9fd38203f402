@@ -25,7 +25,7 @@ public class CalculoIdade {
 		int anodif2 = anodif*365;
 		int mesdif2 = mesdif*12;
 		int diasdaidade= anodif2 + mesdif2 + diadif;
-		System.out.println("Você tem " + diasdaidade + " dias da idade");
+		System.out.println("Vc tem " + diasdaidade + "dias da idade");
 				
 	}
 }
