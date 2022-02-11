@@ -7,8 +7,5 @@ public class CalculoIdade {
 		LocalDate hoje = LocalDate.now();
 		LocalDate anniversario = LocalDate.of(0, 0, 0);
 		Period.between(anniversario, hoje).getYears();
-		
-		
-		
 	}
 }
