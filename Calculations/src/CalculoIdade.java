@@ -19,13 +19,16 @@ public class CalculoIdade {
 		
 		LocalDate hoje = LocalDate.now();
 		LocalDate anniversario = LocalDate.of(ano, mes, dia);
+		
 		int anodif = Period.between(anniversario, hoje).getYears();
 		int mesdif = Period.between(anniversario, hoje).getMonths();
 		int diadif = Period.between(anniversario, hoje).getDays();
+		
 		int anodif2 = anodif*365;
 		int mesdif2 = mesdif*12;
 		int diasdaidade= anodif2 + mesdif2 + diadif;
 		System.out.println("Você tem " + diasdaidade + " dias da idade");
 				
 	}
+	
 }

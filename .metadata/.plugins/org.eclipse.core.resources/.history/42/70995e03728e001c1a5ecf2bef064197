@@ -1,0 +1,16 @@
+package Task2;
+
+import java.util.Scanner;
+
+public class TimeConverter {
+ public static void main(String[] args) {
+	 int hours;
+	 int minutes;
+	 int seconds;
+	  Scanner s = new Scanner(System.in);
+	  // Metodo 1
+	 System.out.println("Digite segundos que quiser");
+	 int time = s.nextInt();
+	 
+}
+}

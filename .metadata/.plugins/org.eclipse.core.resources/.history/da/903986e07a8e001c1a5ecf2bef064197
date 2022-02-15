@@ -1,0 +1,35 @@
+package Task2;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class TimeConverter {
+	public static void main(String[] args) {
+		int hours;
+		int minutes;
+		int seconds;
+		final int MinutesCalculation = 60;
+		final int HourCalculation = 60;
+
+		//Metodo 1
+		Scanner method1 = new Scanner(System.in).useLocale(Locale.US);
+		System.out.println("Write an amount of seconds you want:");
+		int time = method1.nextInt();
+		hours = time/3600;
+		minutes = time/60;
+		seconds = time%60;
+		System.out.println("The time is: " + hours + " hour(s) " + minutes + " minute(s) " + seconds + " second(s) ");
+		method1.close();
+
+		//Metodo 2
+		Scanner method2 = new Scanner(System.in).useLocale(Locale.US);
+		System.out.println("seconds you want:");
+		seconds = method2.nextInt();
+		minutes = seconds/MinutesCalculation;
+		seconds -= minutes*MinutesCalculation;
+		hours = minutes/HourCalculation;
+		minutes -= hours *HourCalculation;
+		System.out.println("The time is: " + hours + " hour(s) " + minutes + " minute(s) " + seconds + " second(s) ");
+		method2.close();
+	}
+}
