@@ -34,7 +34,7 @@ public class TimeConverter {
 			newSeconds = newSeconds%60;
 			System.out.println("Method3 \n The time is: " + hours + " hour(s) " + minutes + " minute(s) " + newSeconds + " second(s) ");
 			
-			//Metodo 4 - não está acabado
+			//Metodo 4
 			int veryNewSeconds = time%60;
 			hours = time%3600/3600;
 			minutes = hours%60;
